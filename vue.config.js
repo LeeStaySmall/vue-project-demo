@@ -11,7 +11,7 @@ const externals = {
   'vuex': 'Vuex',
   'axios': 'axios',
   'element-ui': 'ELEMENT',
-  'js-cookie': 'JsCookie'
+  'js-cookie': 'Cookie'
 }
 
 const cdn = {
