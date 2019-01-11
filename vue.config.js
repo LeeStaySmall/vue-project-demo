@@ -36,7 +36,7 @@ const cdn = {
       'https://cdn.bootcss.com/vue-router/3.0.2/vue-router.min.js',
       'https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js',
       'https://cdn.bootcss.com/axios/0.18.0/axios.min.js',
-      'https://cdn.bootcss.com/element-ui/2.4.11/index.js',
+      'https://unpkg.com/element-ui/lib/index.js',
       'https://cdn.bootcss.com/js-cookie/2.2.0/js.cookie.min.js',
       'https://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js'
     ]
