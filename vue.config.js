@@ -13,7 +13,7 @@ const externals = {
   'axios': 'axios',
   'element-ui': 'ELEMENT',
   'js-cookie': 'Cookies',
-  'nprogress': 'Nprogress'
+  'nprogress': 'NProgress'
 }
 
 const cdn = {
