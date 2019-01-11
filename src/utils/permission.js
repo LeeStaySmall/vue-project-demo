@@ -4,7 +4,7 @@ import {
   getToken
 } from './auth'
 import NProgress from 'nprogress' // 进度条
-import 'nprogress/nprogress.css' // 进度条样式
+// import 'nprogress/nprogress.css' // 进度条样式
 import {
   Message
 } from 'element-ui'

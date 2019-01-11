@@ -44,7 +44,6 @@ const user = {
     GetUserInfo ({ commit, state }) {
       return new Promise((resolve, reject) => {
         api.getUserInfo().then(res => {
-          console.log(res)
           if (res.code === 200) {
             commit('SET_NAME', res.data.name)
             commit('SET_AVATAR', res.data.avatar)
