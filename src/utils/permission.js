@@ -9,7 +9,7 @@ import {
   Message
 } from 'element-ui'
 
-const whiteList = ['/login'] // 不重定向白名单
+const whiteList = ['/login', '/', '/about'] // 不重定向白名单
 router.beforeEach((to, from, next) => {
   NProgress.start()
   if (getToken()) {
@@ -17,7 +17,6 @@ router.beforeEach((to, from, next) => {
       next({
         path: '/'
       })
-      NProgress.done()
     } else { // 实时拉取用户的信息
       store.dispatch('GetUserInfo').then(res => {
         next()
@@ -35,7 +34,6 @@ router.beforeEach((to, from, next) => {
       next()
     } else {
       next('/login')
-      NProgress.done()
     }
   }
 })
