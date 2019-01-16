@@ -26,7 +26,7 @@ const common = {
         return Obj
       }
     }
-    // 所有的枚举
+    // 所有的枚举， 这种方式同样可以替代过滤器
     Vue.prototype.$enum = {
       styleStatus: ['停用', '启用'],
       barType: ['样式类别', 'url类别']

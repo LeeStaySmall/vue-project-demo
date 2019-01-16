@@ -1,5 +1,8 @@
 import axios from 'axios'
 import store from '@/store'
+import {
+  Message
+} from 'element-ui'
 
 // 创建axios 实例
 const service = axios.create({
@@ -34,6 +37,15 @@ service.interceptors.response.use(
   response => {
     const res = response.data
     // 这里处理一些response 正常放回时的逻辑
+
+    // 比如， 如果code 非 200 统一提示错误，当然你仍可以更详细的区分
+    if (res.code !== 200) {
+      Message({
+        message: '全局错误提示演示：' + res.msg,
+        type: 'error',
+        duration: 5000
+      })
+    }
 
     // loading - 1
     store.dispatch('SetLoading', false)

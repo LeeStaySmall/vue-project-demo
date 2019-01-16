@@ -3,7 +3,7 @@ import api from '@/api/user'
 
 const user = {
   state: {
-    token: getToken(),
+    token: getToken() || 'admin',
     name: '',
     avatar: '',
     roles: []

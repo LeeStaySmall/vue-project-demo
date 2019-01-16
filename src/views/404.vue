@@ -1,6 +1,8 @@
 <template>
     <div class="not-found">
         404 - Not found
+
+        这里你可以通过store 或者 通过父子路由加载不同组件的方式把左边的菜单栏也干掉
     </div>
 </template>
 
